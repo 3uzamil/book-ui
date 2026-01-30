@@ -1,0 +1,130 @@
+body {
+  background: linear-gradient(dodgerblue, purple);
+  background-repeat: no-repeat;
+}
+.bookInfoSection {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#bookInfoContainer {
+  width: 900px;
+  background-color: #fff;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+#bookInfoLeft {
+  height: 100%;
+  width: 45%;
+  padding: 10px 0 70px 0;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+#bookImage {
+  height: 350px;
+  width: 300px;
+  border-radius: 20px;
+  z-index: 1;
+}
+#bookPublishTag {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  font-family: sans-serif;
+  background-color: dodgerblue;
+  font-size: 20px;
+  text-align: center;
+  align-content: center;
+  position: relative;
+  z-index: 2;
+  left: 125px;
+  top: 55px;
+  color: #fff;
+  animation: year 1.5s ease-in 0s infinite normal;
+}
+@keyframes year {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+}
+#bookInfoRight {
+  height: 100%;
+  width: 45%;
+  margin-top: 50px;
+  padding: 0 20px 40px 20px;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  gap: 50px;
+}
+#bookAuthor {
+  color: dodgerblue;
+  font-family: sans-serif;
+  font-size: 15px;
+}
+#cardContainer {
+  display: flex;
+  gap: 20px;
+}
+.cards {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 10px 25px;
+  border-radius: 5px;
+  color: rgba(0, 0, 0, 0.5);
+  font-family: sans-serif;
+  font-weight: 550;
+}
+button {
+  font-size: 18px;
+  padding: 12px 20px;
+  margin: 5px 0;
+  border-radius: 10px;
+}
+button:hover {
+  cursor: pointer;
+}
+button:active {
+  transform: scale(0.9);
+}
+#btn-1 {
+  background-color: dodgerblue;
+  color: #fff;
+}
+#btn-2 {
+  background-color: #fff;
+  border: solid 2px dodgerblue;
+}
+@media (max-width: 786px) {
+  .bookInfoSection {
+    height: 100%;
+  }
+  #bookInfoContainer {
+    flex-direction: column;
+  }
+  #bookInfoLeft {
+    width: 100%;
+    border-radius: 0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  #bookInfoRight {
+    width: 80%;
+    margin: 0;
+    gap: 20px;
+  }
+  button {
+    width: 220px;
+  }
+}
