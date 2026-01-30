@@ -106,6 +106,10 @@ button:active {
   background-color: #fff;
   border: solid 2px dodgerblue;
 }
+footer{
+  text-align: center;
+  color: #fff;
+}
 @media (max-width: 786px) {
   .bookInfoSection {
     height: 100%;

@@ -1,2 +1,2 @@
 # book-ui
-This is an user interface of book in card and discription.
+This is an user interface of card and discription for a book.
