@@ -106,7 +106,7 @@ button:active {
   background-color: #fff;
   border: solid 2px dodgerblue;
 }
-footer{
+footer {
   text-align: center;
   color: #fff;
 }
@@ -130,5 +130,8 @@ footer{
   }
   button {
     width: 220px;
+  }
+  footer {
+    margin: 10px 0;
   }
 }
